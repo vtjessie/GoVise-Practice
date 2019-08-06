@@ -1,7 +1,10 @@
-import java.io.IOError;
-import java.io.IOException;
-
+/**
+ * @author vtjessie
+ */
 public class Miscellaneous {
+    /**
+     * example of arithmetic exception
+     */
     public static void arithmeticException(){
         try {
             //bad math
@@ -10,6 +13,10 @@ public class Miscellaneous {
             e.printStackTrace();
         }
     }
+
+    /**
+     * example of continue and break
+     */
     public static void randomContBreak(){
         for (int i = 0; i < 100; i++) {
             if (i * 10 == 50)
@@ -23,9 +30,18 @@ public class Miscellaneous {
             System.out.println();
         }
     }
+
+    /**
+     * instanceof example
+     */
     public static void randomInstanceOf(){
         System.out.println("x" instanceof String);
     }
+
+    /**
+     * example of try and finally
+     * @throws ArithmeticException
+     */
     public static void tryAndFinally() throws ArithmeticException {
         int i;
         try {
@@ -34,6 +50,13 @@ public class Miscellaneous {
             i = 0;
         }
     }
+
+    /**
+     * example of equates
+     * @param str1
+     * @param str2
+     * @param str3
+     */
     public static void checkEquals(String str1, String str2, String str3){
         System.out.println(str1 == str2);
         System.out.println(str1.equals(str3));
