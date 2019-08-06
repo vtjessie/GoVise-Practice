@@ -34,4 +34,9 @@ public class Miscellaneous {
             i = 0;
         }
     }
+    public static void checkEquals(String str1, String str2, String str3){
+        System.out.println(str1 == str2);
+        System.out.println(str1.equals(str3));
+        System.out.println(str2 == str3);
+    }
 }

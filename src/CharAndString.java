@@ -1,6 +1,7 @@
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Scanner;
 
 public class CharAndString {
     public static boolean checkAlpha(char a){
@@ -62,5 +63,28 @@ public class CharAndString {
         for(int i = str.length(); i > 0; i++)
             rtnStr += str.substring(i - 1, i);
         return rtnStr;
+    }
+    public static void findAllDuplicates(String str){
+        for(int i = 0; i < str.length(); i++)
+            if(str.substring(i+1, str.length()).contains(str.substring(i, i+1)))
+                System.out.println("there is an " + str.substring(i, i+1) + "duplicate");
+    }
+    public static boolean checkPalindrone(String str){
+        return str.equals(new StringBuilder(str).reverse().toString());
+    }
+    public static String intToString(int i){
+        return ""+i;
+    }
+    public static int stringToInt(String str){
+        return Integer.parseInt(str);
+    }
+    public static void splitySplit(String str){
+        String sub10 = str.substring(0,10);
+        System.out.println(sub10.substring(0, 5));
+        System.out.println(sub10.substring(5, 10));
+    }
+    public static String getUserInput(){
+        Scanner sc = new Scanner(System.in);
+        return sc.nextLine();
     }
 }
